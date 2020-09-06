@@ -1,0 +1,298 @@
+body , ul , li , a{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 微软雅黑,Helvetica,Arial,Hiragino Sans GB,Hiragino Sans GB W3,WenQuanYi Micro Hei,sans-serif;
+  }
+ul , li{
+    list-style: none;
+}
+a{
+    color: #8D9D9D;
+    text-decoration: none;
+}
+header{
+    width: auto;
+    min-height: 50px;
+    background: #222222;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.navbar-caidan{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+}
+.navbar-caidan:hover{
+    cursor: pointer;
+    /* 手型 */
+    /* visibility: visible; */
+    /* 元素可见 */
+}
+.caidan-list{
+    width: 100vw;
+    position: relative;
+    top: 42px;
+    left: -550px;
+    background: #222;
+    padding-left: 10px;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: height 2s ease;
+    z-index: 3;
+}
+.caidan-list li a{
+    display: block;
+    font-size: 16px;
+    padding: 6px 0;
+    line-height: 24px;
+}
+.navbar-caidan:hover+.caidan-list{
+    height: 220px;
+    visibility: visible;
+}
+.navbar-logo-xs{
+    float: left;
+    height: 40px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color:  #9d9d9d;
+    font-size: 24px;
+}
+.navbar-logo-xs:hover{
+    color: #ffffff;
+}
+nav,.logo,.about{
+    display: none;
+}
+.bootstrap{
+    width: 100vw;
+    background: linear-gradient(45deg,#020031,#6d3353);
+    padding: 90px 0 110px;
+    color: #fff;
+    margin: auto;
+}
+.bootstrap-cont{
+    width: 100vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.bootstrap-cont h1{
+    width: 100vw;
+    height: 60px;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin-top: 20px;
+}
+.bootstrap-cont h2{
+    width: 100vw;
+    height: 22px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.25;
+    margin-top: 30px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+.bootstrap-cont a{
+    display: block;
+    color: #fff;
+}
+.bootstrap-cont a:nth-of-type(1){
+    width: 300px;
+    height: 54px;
+    margin: 20px auto;
+    padding: 13px 35px 17px 35px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 18px;
+    background-color: #337AB7;
+    box-shadow: inset 0 -4px 0 #23527c;
+    border: 0;
+    color: #fff;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.bootstrap-cont a:nth-of-type(1):hover{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background-color: #286090;
+}
+
+.bootstrap-cont a:nth-of-type(2){
+    font-size: 14px;
+    color: hsla(0,0%,100%,.5);
+    line-height: 2;
+}
+.bootstrap-cont a:nth-of-type(2):hover{
+    text-decoration: underline;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+
+}
+.bootstrap-text{
+    width: 100vw;
+    height: auto;
+    padding: 60px 15px 0;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    margin: auto;
+}
+.bootstrap-tuijian{
+    width: 65%;
+    text-align: center;
+    font-weight: 200px;
+    display: block;
+    margin: 0 auto 40px;
+    border-bottom: 1px solid #eee;
+}
+.bootstrap-tuijian h2{
+    font-size: 30px;
+    letter-spacing: -1px;
+    margin: 20px 0 10px 0;
+    font-weight: 500;
+    color: inherit;
+}
+.bootstrap-tuijian p{
+    line-height: 20px;
+    margin: 0 0 10px;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+/*  */
+.box{
+    width: 300px;
+    margin: auto;
+    padding-top: 20px;
+
+  }
+  .box div{
+      width: 300px;
+      top: 0; left: 0; right: 0; bottom: 0;
+      height: 400px;
+      margin: auto;
+      /* background: rgb(52, 113, 192); */
+  }
+  img{
+      width: 300px;
+      height: 400px;
+  }
+  .col-xs-12{
+   width: 100%;
+   float: left;
+  }
+  @media screen and (min-width:768px){ 
+  .box{
+  width: 768px;
+  margin: auto;
+  }
+  header{
+  min-width: 768px;
+  background: #222;
+  height: 42px;
+  }
+  .col-s-6{
+   width: 50%;
+   float: left;
+  }
+  .logo{
+    display: block;
+    width: 100%; 
+    height: 100%;
+    line-height: 42px;
+    font-size: 18px;
+    display: none;
+  }
+  nav{
+    width: 678px;
+    height: 100%;
+    /* float: left; */
+    margin: auto;
+    display: block;
+  }
+  nav a{
+    float: left;
+    height: 100%;
+    line-height: 42px;
+    padding:0 2%;
+  }
+  .about{
+    float: right;
+    width: 100px;
+    height: 100%;
+    display: none;
+  }
+  .about a{
+    width: 100px;
+    height: 100%;
+    line-height: 42px;
+  }
+  .logo-xs{
+      display: none;
+  }
+  .navbar-caidan{
+      display: none;
+  }
+  }
+  @media screen and (min-width:992px){
+  .box{
+  width: 992px;
+  margin: auto;
+  }
+  .col-m-4{
+  width: 33.3%;
+  float: left;
+  } 
+   .about{
+   display: block;
+   }
+   nav{
+   float: left;
+   display: block;
+   }
+  .logo{
+   width: 164px;
+   height: 100%;
+   float: left;
+   display: block;
+  }
+  .bootstrap-cont h1{
+    font-size: 100px;
+    height: 100px;
+  }
+  .bootstrap-cont h2{
+    font-size: 30px;
+    height: 36.8px;
+    letter-spacing: 0;
+   }  
+  .bootstrap-text h2{
+    font-size: 42px;
+   } 
+  }
+  @media screen and (min-width:1200px){
+  .box{
+  width: 1200px;
+  }
+  .col-l-3{
+  width: 25%;
+  float: left;
+  } 
+  }
